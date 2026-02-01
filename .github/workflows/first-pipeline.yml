@@ -1,0 +1,17 @@
+name: First Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run a simple command
+        run: echo "Hello from my first GitHub Actions pipeline"
