@@ -13,5 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run a simple command
-        run: echo "Hello from my first GitHub Actions pipeline"
+      - name: Run my script
+        run: ./first_script.sh
