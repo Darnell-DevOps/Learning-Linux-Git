@@ -13,5 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Check required files
+        run: |
+          test -f notes.txt
+          test -f first_script.sh
+
       - name: Run my script
         run: ./first_script.sh
+
